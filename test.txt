@@ -1,2 +1,2 @@
-no conflict
+git log --graph --oneline --all --decorateno conflict
 test
