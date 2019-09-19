@@ -5,3 +5,12 @@ services:
 script:
   - docker build -t enoch/node .
   - docker images enoch/node
+
+before_deploy:
+  - docker login -u enochhaozheng -p Zh19950513
+
+deploy:
+  provider: script
+  script: docker push enoch/node
+  on:
+    branch: master
