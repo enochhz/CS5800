@@ -7,7 +7,7 @@ script:
   - docker images enochhaozheng/node
 
 before_deploy:
-  - docker login docker.io -u enochhaozheng -p Zh19950513
+  - docker login docker.io 
 
 deploy:
   provider: script
