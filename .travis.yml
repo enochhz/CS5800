@@ -11,6 +11,6 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push enoch/node
+  script: docker tag first-image enoch/node:first-image && docker push enoch/node:first-image
   on:
     branch: master
