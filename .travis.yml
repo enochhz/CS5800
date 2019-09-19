@@ -7,10 +7,10 @@ script:
   - docker images enoch/node
 
 before_deploy:
-  - docker login -u enochhaozheng -p Zh19950513
+  - docker login docker.io -u enochhaozheng -p Zh19950513
 
 deploy:
   provider: script
-  script: docker tag first-image enoch/node:first-image && docker push enoch/node:first-image
+  script: docker push enoch/node:first-image
   on:
     branch: master
