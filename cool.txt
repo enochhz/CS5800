@@ -1,3 +1,0 @@
-cool
-aasdf
-testing true merge
