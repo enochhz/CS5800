@@ -3,14 +3,14 @@ services:
   - docker
 
 script:
-  - docker build -t enoch/node .
-  - docker images enoch/node
+  - docker build -t enochhaozheng/node .
+  - docker images enochhaozheng/node
 
 before_deploy:
   - docker login docker.io -u enochhaozheng -p Zh19950513
 
 deploy:
   provider: script
-  script: docker push enoch/node:first-image
+  script: docker push enochhaozheng/node
   on:
     branch: master
